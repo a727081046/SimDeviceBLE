@@ -20,7 +20,7 @@ jobs:
     - name: Make gradlew executable
       run: chmod +x ./gradlew
 
-    - name: Build APK (Github flavor)
+    - name: Build APK (GitHub Flavor)
       run: ./gradlew assembleGithubDebug --stacktrace
 
     - name: Upload artifact
