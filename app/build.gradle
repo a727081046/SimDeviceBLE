@@ -19,22 +19,18 @@ android {
         testApplicationId "nl.rwslinkman.simdeviceble.test"
     }
 
-    // ---------- 新增：flavor 配置 ----------
     flavorDimensions "default"
 
     productFlavors {
         play {
             dimension "default"
-            // Play 商店适配的正常版
         }
         github {
             dimension "default"
             applicationIdSuffix ".github"
             versionNameSuffix "-github"
-            // 完整功能版（包含 Import custom device）
         }
     }
-    // ---------- 新增结束 ----------
 
     sourceSets {
         main {
